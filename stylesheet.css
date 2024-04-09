@@ -1,0 +1,25 @@
+.contenedor-padre{
+display: flex;
+    /*utilizar flexbox*/
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    /*alinear verticalmete al centro*/
+    justify-content: space-around;
+    /*distribuir el espaciaoa netre elementos*/
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 650px;
+}
+.total{
+    order: 2;
+}
+.foto-producto{
+    order: 1;
+}
+h1 {
+    text-align: center;
+}
+.devoluciones{
+    text-align: center;
+}
