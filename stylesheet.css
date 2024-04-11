@@ -23,3 +23,20 @@ h1 {
 .devoluciones{
     text-align: center;
 }
+
+.titulo { /*Ajusto la seccion de la pagina web*/
+    top: 5%;
+    left: 50%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.contenedor-imagen { /*Ajusto la imagen de fondo*/
+    position: fixed; /*Le asigno una posicion fija en el viewport */
+    top: 51%; /*Asigno las posiciones sobre los margenes */
+    left: 50%;
+    width: 75%;
+    height: 75%;
+    transform: translate(-50%, -50%); /*Ajusta hacia arriba y la izquierda un 50% de su propio tamano para centrarlo por completo (sin esto no me funcionaba) */
+}
+
