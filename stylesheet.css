@@ -31,6 +31,14 @@ h1 {
     font-size: 50px;
 }
 
+.imagenes-productos {
+    z-index: 1; /*Mando las imagenes al indice 1 para que el fondo no las tape*/
+    position: relative;
+    display: flex; /*Aplico flexbox para posicionarlas como quiero */
+    width: auto;
+
+}
+
 .contenedor-imagen { /*Ajusto la imagen de fondo*/
     position: fixed; /*Le asigno una posicion fija en el viewport */
     top: 51%; /*Asigno las posiciones sobre los margenes */
@@ -38,5 +46,7 @@ h1 {
     width: 75%;
     height: 75%;
     transform: translate(-50%, -50%); /*Ajusta hacia arriba y la izquierda un 50% de su propio tamano para centrarlo por completo (sin esto no me funcionaba) */
+    z-index: 0; /*Lo mando atras para que las imagenes de los productos aparezcan delante */
 }
+
 
