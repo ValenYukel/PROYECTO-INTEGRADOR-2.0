@@ -12,7 +12,7 @@ display: flex;
     align-items: center;
     /*alinear verticalmete al centro*/
     justify-content: space-around;
-    /*distribuir el espaciaoa netre elementos*/
+    /*distribuir el espacio entre los elementos*/
     padding-left: 15px;
     padding-right: 15px;
     height: 650px;
@@ -58,5 +58,4 @@ h1 {
     transform: translate(-50%, -50%); /*Ajusta hacia arriba y la izquierda un 50% de su propio tamano para centrarlo por completo (sin esto no me funcionaba) */
     z-index: 0; /*Lo mando atras para que las imagenes de los productos aparezcan delante */
 }
-
 
