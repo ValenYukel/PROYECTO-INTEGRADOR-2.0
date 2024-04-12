@@ -11,15 +11,19 @@ display: flex;
     padding-right: 15px;
     height: 650px;
 }
+
 .total{
     order: 2;
 }
+
 .foto-producto{
     order: 1;
 }
+
 h1 {
     text-align: center;
 }
+
 .devoluciones{
     text-align: center;
 }
