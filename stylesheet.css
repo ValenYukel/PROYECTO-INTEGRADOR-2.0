@@ -1,3 +1,9 @@
+img {
+    width: 20%;
+    height: 20%;
+    display: block; /* Hacer que la imagen sea un bloque */
+    margin: 0 auto; /* Margen automático a la izquierda y derecha para centrar horizontalmente */
+}
 .contenedor-padre{
 display: flex;
     /*utilizar flexbox*/
