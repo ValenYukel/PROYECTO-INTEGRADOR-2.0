@@ -1,3 +1,79 @@
+
+html{
+    color: black;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    }
+
+    
+    #conteiner{
+        display: flexbox;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+
+    header{
+    background-color: whitesmoke;
+    width: max-content;
+    align-content: center;
+    }
+
+    .titulo{
+    display: flex;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 30px;
+
+  display: grid;
+  border: 2px solid black;
+}
+    
+     #logo{
+       width: 70px;
+       height: 70px;
+       border-radius: 50%;
+       border: 2px solid black;
+      
+      margin-right: 5px;
+    }
+    
+   a {
+        text-decoration: none; 
+        color: rgb(55, 55, 55); 
+        padding: 20px;
+    }
+
+#menu{
+    display: flex;
+    color: grey;
+}
+
+#menu a:hover{
+    color: white;
+
+}
+
+#menu a{
+border: 2px solid black;
+  display: grid;
+}
+
+
+#barra_nav{
+display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+
 img {
     width: 20%;
     height: 20%;
@@ -12,25 +88,29 @@ display: flex;
     align-items: center;
     /*alinear verticalmete al centro*/
     justify-content: space-around;
-    /*distribuir el espaciaoa netre elementos*/
+    /*distribuir el espacio entre los elementos*/
     padding-left: 15px;
     padding-right: 15px;
     height: 650px;
 }
+
 .total{
     order: 2;
 }
+
 .foto-producto{
     order: 1;
 }
+
 h1 {
     text-align: center;
 }
+
 .devoluciones{
     text-align: center;
 }
 
-.titulo { /*Ajusto la seccion de la pagina web*/
+.tit { /*Ajusto la seccion de la pagina web*/
     top: 5%;
     left: 50%;
     text-align: center;
@@ -47,4 +127,3 @@ h1 {
 .imagenes-productos > p {
     text-align: center;
 }
-
