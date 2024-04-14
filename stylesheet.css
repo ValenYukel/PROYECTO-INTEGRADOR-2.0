@@ -17,7 +17,6 @@ html{
     header{
     background-color: whitesmoke;
     width: max-content;
-    align-content: center;
     }
 
     .titulo{
@@ -29,6 +28,7 @@ html{
   font-size: 30px;
 
   display: grid;
+  grid-template-columns: 1fr 1fr;
   border: 2px solid black;
 }
     
@@ -38,6 +38,7 @@ html{
        border-radius: 50%;
        border: 2px solid black;
       
+       
       margin-right: 5px;
     }
     
@@ -73,6 +74,38 @@ display:grid;
  
 }
 
+#foot{
+    display: flex;
+    color: gray;
+    margin: 15px;
+    list-style: none;
+}
+
+#foot li{
+    list-style: none;
+}
+
+#footer{
+    color: rgb(59, 59, 59);
+    font-weight: bold;
+    font-size: 10px;
+    margin: 15px;
+}
+
+h4{
+    text-align: center;
+    margin: 15px;   
+}
+
+footer{
+    justify-content: center;
+    align-items: center;
+    display: flexbox;
+    background-color: whitesmoke;
+    width: max-content;
+    height: max-content;
+    padding: 23px;
+}
 
 img {
     width: 20%;
