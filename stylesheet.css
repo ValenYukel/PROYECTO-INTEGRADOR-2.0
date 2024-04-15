@@ -10,10 +10,14 @@ body{
     background-color: rgba(238, 235, 230, 0.951);
 }
 
+header{
+    min-width: min-content;
+}
+
 #conteiner{
         display: flexbox;
         align-items: center;  
-        width: 100%;
+        
         background-color: whitesmoke;
     }
     
@@ -26,7 +30,8 @@ p:hover{
   font-weight: 900;
   font-style: normal;
   font-size: 30px;
-
+  
+  justify-content: space-between;
   display: flex;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -57,10 +62,23 @@ a {
 #menu{
     display: flex;
     color: grey;
-    justify-content: center;
-   
+    background-color: whitesmoke;
+    width: 100%;
 
 }
+
+#menu a{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  border: 2px solid black;
+  padding:10px;
+  text-align: center;
+}
+
+.menu-item{
+    margin: auto;
+    padding-left: 40px;
+    }
 
 #menu a:hover{
     color: black;
@@ -68,17 +86,11 @@ a {
 
 }
 
-#menu a{
-border: 2px solid black;
-  display: grid;
-  padding:20px;
-}
 
 
 #barra_nav{
 display:grid;
   grid-template-columns: 1fr;
-  
   align-items: center;
   justify-content: center;
 
@@ -88,7 +100,7 @@ display:grid;
     display: flex;
     color: rgb(60, 54, 54);
     margin: 15px;
-   width: 100%;
+   width: max-content;
 
 }
 
@@ -101,7 +113,6 @@ display:grid;
     font-weight: bold;
     font-size: 10px;
     margin: 15px;
-    width: 100%;
 }
 
 h4{
@@ -114,7 +125,7 @@ footer{
     align-items: center;
     display: flexbox;
     background-color: whitesmoke;
-    width: 100%;
+    min-width: max-content;
     height: max-content;
     padding: 23px;
 }
