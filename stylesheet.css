@@ -9,7 +9,7 @@ display: flex;
     /*utilizar flexbox*/
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch; /* Estirar las cajas para que tengan la misma altura */
     /*alinear verticalmete al centro*/
     justify-content: space-around;
     /*distribuir el espaciaoa netre elementos*/
@@ -17,8 +17,19 @@ display: flex;
     padding-right: 15px;
     height: 650px;
 }
-.total{
+.total {
     order: 2;
+}
+
+.medio-de-pago {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    flex-wrap: nowrap;
+}
+
+.medio-de-pago img {
+    width: 30px; /* Tamaño pequeño para las imágenes */
+   /* margin-right: 5px; /* Espacio entre las imágenes */
 }
 .foto-producto{
     order: 1;
