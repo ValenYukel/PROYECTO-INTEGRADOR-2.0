@@ -186,11 +186,11 @@ footer{
  }
 
 
-
-.contenedor-padre{
+/* Carrito:*/ 
+.contenedor-padre {
 display: flex;
     /*utilizar flexbox*/
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     align-items: stretch; /* Estirar las cajas para que tengan la misma altura */
     /*alinear verticalmete al centro*/
@@ -202,6 +202,15 @@ display: flex;
 }
 .total{
     order: 2;
+}
+.medio-de-pago {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.medio-de-pago img {
+    width: 30px; /* Tamaño pequeño para las imágenes */
+    margin-right: 15px; /* Espacio entre las imágenes */
 }
 .foto-producto{
     order: 1;
