@@ -14,22 +14,20 @@ body{
         display: flexbox;
         align-items: center;  
         width: 100%;
+        background-color: whitesmoke;
     }
     
-
-header{
-    background-color: whitesmoke;
-
+p:hover{
+   font-weight: bold;
 }
 
-
 .titulo{
-        font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 30px;
 
-    display: flex;
+  display: flex;
   display: grid;
   grid-template-columns: 1fr 1fr;
   border: 2px solid black;
@@ -59,6 +57,8 @@ a {
 #menu{
     display: flex;
     color: grey;
+    justify-content: center;
+   
 
 }
 
@@ -71,16 +71,17 @@ a {
 #menu a{
 border: 2px solid black;
   display: grid;
+  padding:20px;
 }
 
 
 #barra_nav{
 display:grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 90px;
-  padding: 0;
+  
   align-items: center;
   justify-content: center;
+
 }
 
 #foot{
@@ -170,6 +171,7 @@ footer{
 .remera-img img:hover{
     transform: scale(1,1.15);
     box-shadow: 0px 20px 15px rgba(0,0,0,0.20);
+    margin: 10px;
  }
 
 
