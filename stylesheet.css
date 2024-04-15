@@ -1,9 +1,192 @@
-img {
-    width: 20%;
-    height: 20%;
-    display: block; /* Hacer que la imagen sea un bloque */
-    margin: 0 auto; /* Margen automático a la izquierda y derecha para centrar horizontalmente */
+
+html{
+    color: black;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    }
+
+body{
+    background-color: rgba(238, 235, 230, 0.951);
 }
+
+header{
+    min-width: min-content;
+}
+
+#conteiner{
+        display: flexbox;
+        align-items: center;  
+        
+        background-color: whitesmoke;
+    }
+    
+p:hover{
+   font-weight: bold;
+}
+
+.titulo{
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 30px;
+  
+  justify-content: space-between;
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid black;
+  align-items: center;
+}
+
+
+.titulo img{
+    float: right;
+  }
+      
+
+#logo{
+       width: 70px;
+       height: 70px;
+       border-radius: 50%;
+       border: 2px solid black;
+      margin-right: 5px;
+    }
+    
+a {
+        text-decoration: none; 
+        color: rgb(55, 55, 55); 
+        padding: 20px;
+    }
+
+#menu{
+    display: flex;
+    color: grey;
+    background-color: whitesmoke;
+    width: 100%;
+
+}
+
+#menu a{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  border: 2px solid black;
+  padding:10px;
+  text-align: center;
+}
+
+.menu-item{
+    margin: auto;
+    padding-left: 40px;
+    }
+
+#menu a:hover{
+    color: black;
+    box-shadow: 0px 20px 15px rgba(0,0,0,0.20);
+
+}
+
+
+
+#barra_nav{
+display:grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#foot{
+    display: flex;
+    color: rgb(60, 54, 54);
+    margin: 15px;
+   width: max-content;
+
+}
+
+#foot li{
+    list-style: none;
+}
+
+#footer{
+    color: rgb(51, 47, 47);
+    font-weight: bold;
+    font-size: 10px;
+    margin: 15px;
+}
+
+h4{
+    text-align: center;
+    margin: 15px;   
+}
+
+footer{
+    justify-content: center;
+    align-items: center;
+    display: flexbox;
+    background-color: whitesmoke;
+    min-width: max-content;
+    height: max-content;
+    padding: 23px;
+}
+
+.ult_nov{
+    text-align: center;
+    padding: 30px; 
+    font-size: 40px;
+}
+
+.secc{
+    text-align: left;
+    padding: 0px; 
+    font-size: 26px;
+}
+
+#secciones{
+   display: flexbox;
+   padding: 10px;
+}
+
+.productos{
+    display: flex;
+    padding: 30px;
+ }
+
+.remera{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 65% 35%;
+    padding: 10px;
+    
+ }
+
+
+ .remera-img img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 15px;
+ }
+
+
+
+.info p{
+    display: inline-flex;
+    color: black;
+    font-size: medium;
+    justify-content: space-between;
+ }
+
+
+.remera-img img:hover{
+    transform: scale(1,1.15);
+    box-shadow: 0px 20px 15px rgba(0,0,0,0.20);
+    margin: 10px;
+ }
+
+
+
 .contenedor-padre{
 display: flex;
     /*utilizar flexbox*/
@@ -12,36 +195,27 @@ display: flex;
     align-items: stretch; /* Estirar las cajas para que tengan la misma altura */
     /*alinear verticalmete al centro*/
     justify-content: space-around;
-    /*distribuir el espaciaoa netre elementos*/
+    /*distribuir el espacio entre los elementos*/
     padding-left: 15px;
     padding-right: 15px;
     height: 650px;
 }
-.total {
+.total{
     order: 2;
-}
-
-.medio-de-pago {
-    display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
-    flex-wrap: nowrap;
-}
-
-.medio-de-pago img {
-    width: 30px; /* Tamaño pequeño para las imágenes */
-   /* margin-right: 5px; /* Espacio entre las imágenes */
 }
 .foto-producto{
     order: 1;
 }
+
 h1 {
     text-align: center;
 }
+
 .devoluciones{
     text-align: center;
 }
 
-.titulo { /*Ajusto la seccion de la pagina web*/
+.tit { /*Ajusto la seccion de la pagina web*/
     top: 5%;
     left: 50%;
     text-align: center;
@@ -49,21 +223,15 @@ h1 {
 }
 
 .imagenes-productos {
-    z-index: 1; /*Mando las imagenes al indice 1 para que el fondo no las tape*/
     position: relative;
     display: flex; /*Aplico flexbox para posicionarlas como quiero */
-    width: auto;
-
+    justify-content: center;
+    gap: 50px;
 }
 
-.contenedor-imagen { /*Ajusto la imagen de fondo*/
-    position: fixed; /*Le asigno una posicion fija en el viewport */
-    top: 51%; /*Asigno las posiciones sobre los margenes */
-    left: 50%;
-    width: 75%;
-    height: 75%;
-    transform: translate(-50%, -50%); /*Ajusta hacia arriba y la izquierda un 50% de su propio tamano para centrarlo por completo (sin esto no me funcionaba) */
-    z-index: 0; /*Lo mando atras para que las imagenes de los productos aparezcan delante */
+.producto {
+    flex: 0 0 auto;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
 }
-
-
