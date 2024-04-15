@@ -192,7 +192,7 @@ display: flex;
     /*utilizar flexbox*/
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch; /* Estirar las cajas para que tengan la misma altura */
     /*alinear verticalmete al centro*/
     justify-content: space-around;
     /*distribuir el espacio entre los elementos*/
@@ -200,11 +200,9 @@ display: flex;
     padding-right: 15px;
     height: 650px;
 }
-
 .total{
     order: 2;
 }
-
 .foto-producto{
     order: 1;
 }
