@@ -124,6 +124,9 @@ h1 {
     gap: 50px;
 }
 
-.imagenes-productos > p {
+.producto {
+    flex: 0 0 auto;
     text-align: center;
+    max-width: 100%;
+    height: auto;
 }
