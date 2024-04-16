@@ -128,6 +128,7 @@ footer{
     min-width: max-content;
     height: max-content;
     padding: 23px;
+    margin-top: 60px;
 }
 
 .ult_nov{
@@ -138,13 +139,13 @@ footer{
 
 .secc{
     text-align: left;
-    padding: 0px; 
+    padding: 10px; 
     font-size: 26px;
 }
 
 #secciones{
    display: flexbox;
-   padding: 10px;
+   padding: 30px;
 }
 
 .productos{
@@ -178,7 +179,6 @@ footer{
    
     flex-direction: column;
     line-height: 1;
-
  }
 
 
@@ -201,12 +201,25 @@ font-family:"Lato", sans-serif;
 font-style: normal;
  }
 
- #boton:hover{
+#boton:hover{
     box-shadow: 0px 20px 15px rgba(0,0,0,0.20);
     font-weight: bold;
-     }
+}
 
-     
+@media (max-width: 420px) {
+   
+.titulo{
+    width:100vw;
+}
+
+
+.menu-item {
+    width:100vw;
+}
+
+}
+
+
 .contenedor-padre{
 display: flex;
     /*utilizar flexbox*/
