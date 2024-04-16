@@ -1,6 +1,6 @@
 # PROYECTO-INTEGRADOR-2.0
 <<<<<<< HEAD
-#Proyecto Integrador Programacion 1. Integrantes: Pedro Guyot, Geronimo Tiscornia y Valentin Yukelson.
+#Proyecto Integrador Programacion 1. Integrantes: Pedro Guyot, Geronimo Tiscornia y Valentino Yukelson.
 Documento de diseño:  https://docs.google.com/document/d/1jdVHda0EpmojLyoJsSL-oJUFrlNAdDjy71sz7fXcp3c/edit
 =======
 
