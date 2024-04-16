@@ -17,9 +17,8 @@ header{
 #conteiner{
         display: flexbox;
         align-items: center;  
-        
         background-color: whitesmoke;
-    }
+}
     
 p:hover{
    font-weight: bold;
@@ -206,6 +205,16 @@ font-style: normal;
     box-shadow: 0px 20px 15px rgba(0,0,0,0.20);
     font-weight: bold;
 }
+
+
+@media (min-width: 1024px) {
+    
+    #menu{
+        width: 100vw;  
+    }
+
+}
+
 
 /*TODO ESTO ES EL INDEX y HEADER Y FOOTER*/
 
