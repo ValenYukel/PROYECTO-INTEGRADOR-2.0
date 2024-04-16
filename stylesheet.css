@@ -263,9 +263,9 @@ font-style: normal;
 
 
 
-/* Carrito:*/ 
-.contenedor-padre {
-display: flex;
+/* Cart:*/ 
+.contenedor {
+    display: flex;
     /*utilizar flexbox*/
     flex-wrap: nowrap;
     flex-direction: row;
@@ -276,9 +276,11 @@ display: flex;
     padding-left: 15px;
     padding-right: 15px;
     height: 650px;
+    
 }
 .total{
     order: 2;
+    justify-content: center;
 }
 .medio-de-pago {
     display: flex;
@@ -288,9 +290,16 @@ display: flex;
 .medio-de-pago img {
     width: 30px; /* Tamaño pequeño para las imágenes */
     margin-right: 15px; /* Espacio entre las imágenes */
+    padding: 5px;
 }
 .foto-producto{
     order: 1;
+    display: flex;
+}
+
+.foto-producto img {
+    width: 95%;
+    padding: 10px;
 }
 
 h1 {
@@ -300,6 +309,9 @@ h1 {
 .devoluciones{
     text-align: center;
 }
+
+/* hasta aca es el cart */
+
 
 .tit { /*Ajusto la seccion de la pagina web*/
     top: 5%;
