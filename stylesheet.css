@@ -176,9 +176,10 @@ footer{
     font-size: medium;
     display: grid;
 
-   
     flex-direction: column;
-    line-height: 1;
+    line-height: 1.5px;
+   
+ 
  }
 
 
@@ -206,18 +207,61 @@ font-style: normal;
     font-weight: bold;
 }
 
-@media (max-width: 420px) {
-   
-.titulo{
-    width:100vw;
-}
+/*TODO ESTO ES EL INDEX y HEADER Y FOOTER*/
 
 
-.menu-item {
-    width:100vw;
+
+
+
+.contenedor-login{
+    height: 40vh;
+   text-align: center;
+   justify-content: center;
 }
 
+.contenedor-login h2{
+    text-align: center;
+    padding-top: 50px;
 }
+
+.chico-login{
+  padding: 10px;
+}
+
+.login-password{
+    padding: 5px;
+    font-weight: bold;
+}
+
+.login-email{
+    padding: 5px;
+    font-weight: bold;
+}
+
+.login-ingresar{
+    margin-top: 10px;
+    background-color: whitesmoke;
+    font-family:"Lato", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.acciones{
+    padding: 15px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.botones-acciones{
+    padding-top: 10px;
+}
+
+/*TODO ESTO ES EL LOGIN*/
+
+
+
 
 
 .contenedor-padre{
