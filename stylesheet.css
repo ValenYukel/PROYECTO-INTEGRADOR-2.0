@@ -11,12 +11,12 @@ body{
 }
 
 header{
-    min-width: min-content;
+    max-width: 420px;
 }
+
 
 #conteiner{
         display: flexbox;
-        align-items: center;  
         background-color: whitesmoke;
 }
     
@@ -28,7 +28,7 @@ p:hover{
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-style: normal;
-  font-size: 30px;
+  font-size: 22px;
   
   justify-content: space-between;
   display: flex;
@@ -43,13 +43,16 @@ p:hover{
     float: right;
   }
       
+  .titulo h1{
+    padding-left: 5px;
+  }
 
 #logo{
-       width: 70px;
-       height: 70px;
+       width: 50px;
+       height: 50px;
        border-radius: 50%;
        border: 2px solid black;
-      margin-right: 30px;
+       margin-right: 7px;
     }
     
 a {
@@ -59,24 +62,22 @@ a {
     }
 
 #menu{
-    display: flex;
+    display: flexbox;
     color: grey;
     background-color: whitesmoke;
     width: 100%;
-
+   
 }
 
 #menu a{
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   border: 2px solid black;
   padding:10px;
-  text-align: center;
 }
 
 .menu-item{
-    margin: auto;
-    padding-left: 40px;
+    text-align: center;
+   margin: auto;
     }
 
 #menu a:hover{
@@ -84,7 +85,6 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     box-shadow: 0px 20px 15px rgba(0,0,0,0.20);
 
 }
-
 
 
 #barra_nav{
@@ -96,15 +96,20 @@ display:grid;
 }
 
 #foot{
-    display: flex;
+    display: flexbox;
     color: rgb(60, 54, 54);
-    margin: 15px;
-   width: max-content;
+    justify-content: center;
+    width: max-content;
+    padding-bottom: 5px;
 
 }
 
 #foot li{
     list-style: none;
+}
+
+#foot-secc{
+   padding-bottom: 10px;
 }
 
 #footer{
@@ -115,7 +120,7 @@ display:grid;
 }
 
 footer h4{
-    text-align: center;
+    text-align: left;
     margin: 15px;   
 }
 
@@ -124,7 +129,7 @@ footer{
     align-items: center;
     display: flexbox;
     background-color: whitesmoke;
-    min-width: max-content;
+   min-width: 420px;
     height: max-content;
     padding: 23px;
     margin-top: 60px;
@@ -136,9 +141,15 @@ footer{
     font-size: 40px;
 }
 
+
+main{
+    max-width: 420px;
+}
+
 .secc{
     text-align: left;
-    padding: 10px; 
+    padding: 40px; 
+    margin-top: 20px;
     font-size: 26px;
 }
 
@@ -148,16 +159,14 @@ footer{
 }
 
 .productos{
-    display: flex;
-    padding: 30px;
+    display: flexbox;
  }
 
 .remera{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 65% 35%;
-    padding: 10px;
-    
+    padding: 60px;
  }
 
  .remera-img img{
@@ -177,8 +186,6 @@ footer{
 
     flex-direction: column;
     line-height: 1.5px;
-   
- 
  }
 
 
@@ -209,9 +216,70 @@ font-style: normal;
 
 @media (min-width: 1024px) {
     
-    #menu{
-        width: 100vw;  
+    header{
+        min-width: 100vw;
     }
+
+    .titulo{
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 30px;
+        border: 2px solid black; 
+      }
+
+      #logo{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 2px solid black;
+       margin-right: 30px;
+     }
+
+     #menu{
+        display: flex;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;        
+    }
+
+    #menu p{
+        text-align: center;
+    }
+    
+
+    footer{
+        min-width: 100vw;
+        height: max-content;
+    }
+
+
+    #foot{
+        display: flex;
+        margin: 15px;
+       width: max-content;
+    }
+
+    footer h4{
+        text-align: center;   
+    }
+
+
+    main{
+        min-width: 100vw;
+    }
+
+
+    .productos{
+        display: flex;
+        padding: 30px;
+     }
+
+     .remera{
+        padding: 20px;
+     }
+
+
 
 }
 
@@ -268,6 +336,7 @@ font-style: normal;
 }
 
 /*TODO ESTO ES EL LOGIN*/
+/* NO NECESITA QUE SEA ADAPTATIVE*/
 
 
 
