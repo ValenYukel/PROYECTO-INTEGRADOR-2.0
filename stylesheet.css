@@ -11,7 +11,7 @@ body{
 }
 
 header{
-    max-width: 420px;
+    min-width: 100%;
 }
 
 
@@ -130,7 +130,7 @@ footer{
     display: flexbox;
     background-color: whitesmoke;
    min-width: 420px;
-    height: max-content;
+    height: fit-content;
     padding: 23px;
     margin-top: 60px;
 }
@@ -143,7 +143,7 @@ footer{
 
 
 main{
-    max-width: 420px;
+    min-width: 100%;
 }
 
 .secc{
@@ -165,7 +165,7 @@ main{
 .remera{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 65% 35%;
+    grid-template-rows: 60% 40%;
     padding: 60px;
  }
 
@@ -191,7 +191,7 @@ main{
 
 .remera:hover{
     transform: scale(1,1.15);
-    box-shadow: 0px 20px 15px rgba(0,0,0,0.20);
+    box-shadow: 19px 10px 7px rgba(0,0,0,0.20);
     margin: 10px;
     transition: all 0.5s;
  }
@@ -199,7 +199,7 @@ main{
 #botones{
     display: flex;
     gap: 15px;
-    padding: 25px;
+    margin-top: 10px;
  }
 
 #boton{
@@ -277,6 +277,11 @@ font-style: normal;
 
      .remera{
         padding: 20px;
+     }
+
+
+     .remera:hover{
+        box-shadow: 0px 20px 15px rgba(0,0,0,0.20);
      }
 
 
