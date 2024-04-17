@@ -458,3 +458,53 @@ font-style: normal;
     justify-content: center;
     align-items: center;
 }
+
+/* ARRANCA PRODUCTO:*/
+
+.total p {
+    font-size: 1.3vw;
+    white-space: normal;
+    overflow-wrap: break-word;
+    text-transform: none;
+}
+
+.titulo-producto {
+    font-size: 8vw;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.talles {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.talle {
+    border: 20px black;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 80px;
+    height: 40px;
+    margin: 10px;
+}
+
+.talle:focus {
+    outline: none;
+    background-color: lightgray;
+}
+
+.talle:hover{
+    font-weight: bold;
+ }
+
+ .foto-producto, .total {
+    flex: 1;
+    margin: 0 10px;
+    max-width: 50%;
+ }
+
+ .foto-producto {
+    display: flex;
+    justify-content: center;
+ }
