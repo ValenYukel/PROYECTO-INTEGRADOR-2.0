@@ -1,29 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todito</title>
     <link href="stylesheet.css" rel="stylesheet">
 </head>
+
 <body>
     <haeder>
-        <h1 class="titulo">Recuperar</h1>
+
+        <div id="conteiner">
+
+            <div class="titulo">
+
+                <h1>Vaqueritos</h1>
+
+
+                <a href="index.html"><img id="logo" src="imgs/cowboy2.jpeg" alt="logo"></a>
+
+            </div>
+
+            <div id="barra_nav">
+                <nav id="menu">
+                    <a href="index.html">
+                        <p class="menu-item">home</p>
+                    </a>
+                    <a href="category.html">
+                        <p class="menu-item">electronicos</p>
+                    </a>
+                    <a href="category.html">
+                        <p class="menu-item">accesorios</p>
+                    </a>
+                    <a href="category.html">
+                        <p class="menu-item">hombre</p>
+                    </a>
+                    <a href="category.html">
+                        <p class="menu-item">mujer</p>
+                    </a>
+                    <a href="cart.html">
+                        <p class="menu-item">carrito</p>
+                    </a>
+                    <a href="login.html">
+                        <p class="menu-item">sign in/login</p>
+                    </a>
+                </nav>
+            </div>
+
+
+        </div>
     </haeder>
 
     <main>
+     <div class="contenedor-login">
         <h1>has olvidado tu contraseña?</h1>
-        <p class="recuperar">Introduce la dirección de correo electrónico que usaste al crear tu cuenta y te enviaremos un enlace para restablecer tu contraseña.</p>
-
-        
+        <div class="texto-recuperar">
+            <p> Introduce la dirección de correo electrónico que usaste al crear tu cuenta y tu nueva contraseteña.</p>
+            <p>Te enviaremos un mail para confirmar tu nueva contraseña.</p>
+        </div>
+        <div class="login-email">
+            <label for="email">Email:</label>
+            <input type="email" name="mail" value="">
+        <div class="login-password">
+                <label for="password">nueva contraseña:</label>
+                <input id="password" type="password" name="pass" value="">
+        </div>
+        </div>
+        <button class="login-ingresar" type="submit">Enviar</button>
+        </div>
+    </div>
     </main>
-        
+
     <footer>
         <div id="foot">
 
             <div id="shop">
                 <h4>Shop</h4>
-    
+
                 <ul>
                     <li>Home</li>
                     <li>Electronicos</li>
@@ -34,30 +88,30 @@
                     <li>Sign in and login</li>
                 </ul>
             </div>
-    
+
             <div id="Contacto">
                 <h4>Contacto</h4>
-    
+
                 <ul>
                     <li>Mail: Vaqueritos@gmail.com </li>
                     <li>Telefono: 11-4657-5897</li>
                     <li>Instagram: Vaque_ritos</li>
                 </ul>
             </div>
-    
-    
+
+
             <div id="Informacion">
                 <h4>Informacion</h4>
-    
+
                 <ul>
                     <li>Privacidad</li>
                     <li>Legales</li>
                 </ul>
             </div>
-    
+
             <div id="Help">
                 <h4>Help</h4>
-    
+
                 <ul>
                     <li>Problemas con el envio</li>
                     <li>Problemas con el producto</li>
@@ -66,12 +120,14 @@
                     <li>Politicas de cambio</li>
                 </ul>
             </div>
-    
-        <div id="footer">
-            <p>El contenido de esta página web está protegido por copyright y es propiedad de VAQUERITOS C.O. & Digital House.</p>
-        </div>
-    
+
+            <div id="footer">
+                <p>El contenido de esta página web está protegido por copyright y es propiedad de VAQUERITOS C.O. &
+                    Digital House.</p>
+            </div>
+
         </div>
     </footer>
 </body>
+
 </html>
