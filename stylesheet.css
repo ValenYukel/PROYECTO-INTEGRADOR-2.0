@@ -409,7 +409,7 @@ font-style: normal;
 
 .imagenes-productos {
     position: relative;
-    display: flex; /*Aplico flexbox para posicionarlas como quiero */
+    display: flex;
     justify-content: center;
     gap: 50px;
 }
@@ -420,6 +420,8 @@ font-style: normal;
     max-width: 100%;
     height: auto;
 }
+
+/* ARRANCA CATEGORY:*/
 
 .contenedor_productos {
     display: flex;
@@ -437,7 +439,7 @@ font-style: normal;
 .producto_hombre img {
     width: calc(100% - 10%);
     height: 60%;
-    object-fit: contain;
+    object-fit: cover;
     margin: 5%;
     border: 2px solid black;
     border-radius: 15px;
