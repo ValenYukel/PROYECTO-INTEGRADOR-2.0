@@ -391,11 +391,25 @@ font-style: normal;
     padding: 10px;
 }
 
-
 .devoluciones{
     text-align: center;
 }
 
+@media screen and (max-width: 750px) {
+    .contenedor {
+        flex-direction: column; /* Cambia la dirección de flexión a columna para dispositivos móviles */
+        height: auto; /* Altura automática para que se ajuste al contenido */
+    }
+
+    .medio-de-pago img {
+        width: 20px; /* Reduce el tamaño de las imágenes en dispositivos móviles */
+        margin-right: 10px; /* Reduce el espacio entre las imágenes */
+    }
+
+    .foto-producto img {
+        width: 100%; /* Ajusta el ancho de la imagen al 100% en dispositivos móviles */
+    }
+}
  
 /* hasta aca es el cart */
 
