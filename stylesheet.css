@@ -44,8 +44,10 @@ p:hover{
   }
       
   .titulo h1{
-    padding-left: 5px;
+    padding-left: 5px;   
   }
+
+
 
 #logo{
        width: 50px;
@@ -285,7 +287,6 @@ font-style: normal;
      }
 
 
-
 }
 
 
@@ -344,6 +345,13 @@ font-style: normal;
 /* NO NECESITA QUE SEA ADAPTATIVE*/
 
 
+<<<<<<< HEAD
+=======
+
+.recuperar {
+    align-items: center;
+}
+>>>>>>> 28620ee26aaa63835d95f0c5367c7e131512f3db
 
 
 /* Cart:*/
@@ -361,10 +369,12 @@ font-style: normal;
     padding-right: 15px;
     height: 650px;
 }
+
 .total{
     order: 2;
     justify-content: center;
 }
+
 .medio-de-pago {
     display: flex;
     align-items: center; /* Centra verticalmente los elementos */
@@ -375,6 +385,11 @@ font-style: normal;
     margin-right: 15px; /* Espacio entre las imágenes */
     padding: 5px;
 }
+
+.bolsa_compra{
+    padding: 5px;
+}
+
 .foto-producto{
     order: 1;
     display: flex;
@@ -385,13 +400,11 @@ font-style: normal;
     padding: 10px;
 }
 
-h1 {
-    text-align: center;
-}
 
 .devoluciones{
     text-align: center;
 }
+
  
 /* hasta aca es el cart */
 
