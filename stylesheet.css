@@ -343,10 +343,13 @@ font-style: normal;
 /*TODO ESTO ES EL LOGIN*/
 /* NO NECESITA QUE SEA ADAPTATIVE*/
 
+.recuperar {
+    align-items: center;
+}
 
 
+/* Cart:*/
 
-/* Cart:*/ 
 .contenedor {
     display: flex;
     /*utilizar flexbox*/
@@ -359,7 +362,6 @@ font-style: normal;
     padding-left: 15px;
     padding-right: 15px;
     height: 650px;
-    
 }
 .total{
     order: 2;
@@ -392,7 +394,7 @@ h1 {
 .devoluciones{
     text-align: center;
 }
-
+ 
 /* hasta aca es el cart */
 
 
