@@ -442,6 +442,7 @@ font-style: normal;
 }
 
 /* ARRANCA CATEGORY:*/
+
  .lista_productos {
     display: flex;
     flex-wrap: wrap;
@@ -485,6 +486,11 @@ font-style: normal;
     white-space: normal;
     overflow-wrap: break-word;
     text-transform: none;
+    
+}
+
+.detalle_producto {
+    text-align: justify;
 }
 
 .titulo-producto {
@@ -527,6 +533,55 @@ font-style: normal;
     display: flex;
     justify-content: center;
  }
+
+ @media only screen and (max-width: 750px) {
+    .contenedor_producto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secc {
+        text-align: center;
+    }
+
+    .contenedor {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .total .titulo-producto {
+        font-size: 100%;
+    }
+    
+    .total .detalle_producto {
+        font-size: 80%;
+        text-align: justify;
+    }
+
+    .total .precio {
+        font-size: 100%;
+    }
+
+    .total .opciones_talle {
+        font-size: 80%;
+    }
+
+    .total .descuentos {
+        font-size: 80%;
+    }
+
+    .total .opciones_pagos {
+        font-size: 80%;
+    }
+
+    .total .medio-de-pago img {
+        width: 20%;
+        height: 20%;
+    }
+
+
+}
 
  /* TERMINA PRODUCTO */
 
