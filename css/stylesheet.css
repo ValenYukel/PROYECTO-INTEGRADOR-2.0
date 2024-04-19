@@ -10,37 +10,36 @@ html{
 
 body{
     background-color: #eeebe6f3;
-    
+    margin: 0;
 }
 
 header{
-    min-width: 100%;
+    background-color: whitesmoke;
+    
 }
 
 
 #conteiner{
-        display: flexbox;
+        display: flex;
         background-color: whitesmoke;
+        
 }
     
 p:hover{
    font-weight: bold;
 }
 
-.titulo{
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 22px;
-  
-  justify-content: space-between;
-  display: flex;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: 2px solid black;
-  align-items: center;
+.titulo {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 22px;
+    display: flex;
+    border: 2px solid black;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px;
 }
-
 
 .titulo img{
     float: right;
@@ -70,7 +69,7 @@ a {
     }
 
 #menu{
-    display: flexbox;
+    display: flex;
     color: grey;
     background-color: whitesmoke;
     width: 100%;
