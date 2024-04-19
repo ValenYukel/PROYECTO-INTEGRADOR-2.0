@@ -524,3 +524,39 @@ font-style: normal;
     display: flex;
     justify-content: center;
  }
+
+ /* TERMINA PRODUCTO */
+
+ /* ARRANCA REGISTER*/
+ .contenedor_registro{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_registro h2{
+    padding-top: 50px;
+}
+
+.registro_mail, .confirmar_password, .registro_password, .confirmar_password, .terminos_condiciones, .login_link {
+    padding: 5px;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+.boton_registro {
+    padding: 5px;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
