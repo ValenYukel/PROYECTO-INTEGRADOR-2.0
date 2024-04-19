@@ -15,12 +15,12 @@ body{
 
 header{
     background-color: whitesmoke;
-    
+    width: 100%;
 }
 
 
 #conteiner{
-        display: flex;
+        display: flexbox;
         background-color: whitesmoke;
         
 }
@@ -29,17 +29,20 @@ p:hover{
    font-weight: bold;
 }
 
-.titulo {
+.titulo{
     font-family: "Lato", sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 22px;
+  
+    justify-content: space-between;
     display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     border: 2px solid black;
-    justify-content: space-between; /* Distribuye el espacio entre los elementos */
-    align-items: center; /* Centra verticalmente los elementos */
-    padding: 10px;
+    align-items: center;
 }
+
 
 .titulo img{
     float: right;
@@ -69,12 +72,11 @@ a {
     }
 
 #menu{
-    display: flex;
+    display: flexbox;
     color: grey;
-    background-color: whitesmoke;
-
-   
+    background-color: whitesmoke; 
 }
+
 
 #menu a{
 display: grid;
