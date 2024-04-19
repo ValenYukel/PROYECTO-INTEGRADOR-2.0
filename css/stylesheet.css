@@ -14,14 +14,14 @@ body{
 }
 
 header{
-    min-width: 100%;
+    width: 100%;
 }
 
 
 #conteiner{
         display: flexbox;
         background-color: whitesmoke;
-}
+    }
     
 p:hover{
    font-weight: bold;
@@ -32,9 +32,9 @@ p:hover{
   font-weight: 900;
   font-style: normal;
   font-size: 22px;
+ 
   
-  justify-content: space-between;
-  display: flex;
+ 
   display: grid;
   grid-template-columns: 1fr 1fr;
   border: 2px solid black;
@@ -73,7 +73,7 @@ a {
     display: flexbox;
     color: grey;
     background-color: whitesmoke;
-    width: 100%;
+
    
 }
 
@@ -83,7 +83,7 @@ display: grid;
   padding:10px;
 }
 
-.menu-item{
+#barra_nav{
     text-align: center;
    margin: auto;
     }
@@ -299,7 +299,9 @@ font-style: normal;
 /*TODO ESTO ES EL INDEX y HEADER Y FOOTER*/
 
 
-
+.contenedor-login p{
+   font-size: 11px;
+}
 
 
 .contenedor-login{
@@ -586,6 +588,9 @@ font-style: normal;
  /* TERMINA PRODUCTO */
 
  /* ARRANCA REGISTER*/
+
+ /*ATRIBUTOS DE REGISTER PEDRO
+
  .contenedor_registro{
     height: 40vh;
     display: flex;
@@ -618,3 +623,11 @@ font-style: normal;
     justify-content: center;
 }
 
+.acciones_register{
+    padding: 15px;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+}
+
+*/
