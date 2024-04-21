@@ -15,12 +15,12 @@ body{
 
 header{
     background-color: whitesmoke;
-    
+    width: 100%;
 }
 
 
 #conteiner{
-        display: flexs;
+        display: flexbox;
         background-color: whitesmoke;
         
 }
@@ -34,15 +34,15 @@ p:hover{
     font-weight: 900;
     font-style: normal;
     font-size: 22px;
-    
+  
     justify-content: space-between;
     display: flex;
-    
+    display: grid;
     grid-template-columns: 1fr 1fr;
     border: 2px solid black;
     align-items: center;
-  }
-  
+}
+
 
 .titulo img{
     float: right;
@@ -72,12 +72,11 @@ a {
     }
 
 #menu{
-    display: flex;
+    display: flexbox;
     color: grey;
-    background-color: whitesmoke;
-
-   
+    background-color: whitesmoke; 
 }
+
 
 #menu a{
 display: grid;
