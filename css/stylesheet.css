@@ -392,7 +392,7 @@ font-weight: bold; /* Hacer el texto más destacado */
 margin-bottom: 10px; /* Espacio adicional entre los elementos */
 }
 
-.medio-de-pago img {
+.total .medio-de-pago img {
     width: 30px; /* Tamaño pequeño para las imágenes */
     margin-right: 15px; /* Espacio entre las imágenes */
     padding: 5px;
@@ -401,10 +401,22 @@ margin-bottom: 10px; /* Espacio adicional entre los elementos */
 
 @media only screen and (min-width: 1024px) {
     
+    .bolsa-compra {
+        text-align: left;
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        unicode-bidi: isolate;
+    }
+
     .contenedor {
         display: flex;
         /*utilizar flexbox*/
-        flex-wrap: nowrap; 
+        flex-wrap: wrap; 
         flex-direction: row;
         align-items: stretch; /* Estirar las cajas para que tengan la misma altura */
         /*alinear verticalmete al centro*/
@@ -421,20 +433,19 @@ margin-bottom: 10px; /* Espacio adicional entre los elementos */
         text-align: center;
     }
     
-    .medio-de-pago {
-        display: flex;
-        /* Centra verticalmente los elementos */
+    .total .medio-de-pago {
         order: 4;
         align-items: center; 
         flex-direction:row ;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
     
-    .medio-de-pago img {
+    .total .medio-de-pago img {
         width: 30px; /* Tamaño pequeño para las imágenes */
         margin-right: 15px; /* Espacio entre las imágenes */
         padding: 5px;
-    }
+    } 
     
     .bolsa_compra{
         padding: 20px;
