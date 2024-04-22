@@ -427,6 +427,7 @@ margin-bottom: 10px; /* Espacio adicional entre los elementos */
         order: 4;
         align-items: center; 
         flex-direction:row ;
+        justify-content: space-around;
     }
     
     .medio-de-pago img {
