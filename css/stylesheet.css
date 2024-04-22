@@ -367,17 +367,20 @@ font-style: normal;
     /*distribuir el espacio entre los elementos*/
     padding-left: 15px;
     padding-right: 15px;
-    height: 650px;
 }
 
 .total{
     order: 2;
     justify-content: center;
+    padding-left: 20px;
 }
 
 .medio-de-pago {
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
+    align-self: center;/* Centra verticalmente los elementos */
+    order: 3;
+    align-items: center; 
+    flex-direction:row ;
 }
 
 .medio-de-pago img {
@@ -438,6 +441,7 @@ font-style: normal;
         margin-bottom: 10px; /* Espacio adicional entre los elementos */
     }
 }
+
  
 /* hasta aca es el cart */
 
