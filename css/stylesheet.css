@@ -440,6 +440,7 @@ font-style: normal;
         font-weight: bold; /* Hacer el texto más destacado */
         margin-bottom: 10px; /* Espacio adicional entre los elementos */
     }
+
 }
 
  
@@ -610,48 +611,3 @@ font-style: normal;
 }
 
  /* TERMINA PRODUCTO */
-
- /* ARRANCA REGISTER*/
-
- /*ATRIBUTOS DE REGISTER PEDRO
-
- .contenedor_registro{
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contenedor_registro h2{
-    padding-top: 50px;
-}
-
-.registro_mail, .confirmar_password, .registro_password, .confirmar_password, .terminos_condiciones, .login_link {
-    padding: 5px;
-    font-weight: bold;
-    display: flex;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    justify-content: center;
-}
-
-.boton_registro {
-    padding: 5px;
-    font-weight: bold;
-    display: flex;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    justify-content: center;
-}
-
-.acciones_register{
-    padding: 15px;
-    font-weight: bold;
-    font-size: 11px;
-    text-align: center;
-}
-
-*/
