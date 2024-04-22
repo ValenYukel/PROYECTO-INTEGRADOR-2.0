@@ -355,32 +355,41 @@ font-style: normal;
 
 
 /* Cart:*/
+.contenedor-padre {
+    text-align: center; 
+}
 
 .contenedor {
-    display: flex;
-    /*utilizar flexbox*/
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: stretch; /* Estirar las cajas para que tengan la misma altura */
-    /*alinear verticalmete al centro*/
-    justify-content: space-around;
-    /*distribuir el espacio entre los elementos*/
-    padding-left: 15px;
-    padding-right: 15px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 10px;
 }
 
-.total{
-    order: 2;
-    justify-content: center;
-    padding-left: 20px;
+.total, .medio-de-pago, .bolsa_compra {
+text-align: center;
+margin-bottom: 20px;
 }
 
-.medio-de-pago {
-    display: flex;
-    align-self: center;/* Centra verticalmente los elementos */
-    order: 3;
-    align-items: center; 
-    flex-direction:row ;
+.foto-producto {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.foto-producto img {
+max-width: 100%;
+height: auto;
+}
+
+.detalle {
+margin-top: 10px;
+}
+.total p {
+font-size: 100px; /* Ajustar el tamaño de fuente */
+font-weight: bold; /* Hacer el texto más destacado */
+margin-bottom: 10px; /* Espacio adicional entre los elementos */
 }
 
 .medio-de-pago img {
@@ -389,58 +398,69 @@ font-style: normal;
     padding: 5px;
 }
 
-.bolsa_compra{
-    padding: 5px;
-}
 
-.foto-producto{
-    order: 1;
-    display: flex;
-}
-
-.foto-producto img {
-    width: 95%;
-    padding: 10px;
-}
-
-.devoluciones{
-    text-align: center;
-}
-
-@media only screen and (max-width: 750px) {
-    .contenedor-padre, .contenedor {
+@media only screen and (min-width: 1024px) {
+    
+    .contenedor {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 10px;
+        /*utilizar flexbox*/
+        flex-wrap: nowrap; 
+        flex-direction: row;
+        align-items: stretch; /* Estirar las cajas para que tengan la misma altura */
+        /*alinear verticalmete al centro*/
+        justify-content: space-around;
+        /*distribuir el espacio entre los elementos*/
+        padding-left: 15px;
+        padding-right: 15px;
     }
-
-    .total, .medio-de-pago, .bolsa_compra {
+    
+    .total{
+        order: 3;
+        padding-left: 20px;
+        align-items:center;
         text-align: center;
-        margin-bottom: 20px;
     }
-
-    .foto-producto {
+    
+    .medio-de-pago {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
+        /* Centra verticalmente los elementos */
+        order: 4;
+        align-items: center; 
+        flex-direction:row ;
     }
-
+    
+    .medio-de-pago img {
+        width: 30px; /* Tamaño pequeño para las imágenes */
+        margin-right: 15px; /* Espacio entre las imágenes */
+        padding: 5px;
+    }
+    
+    .bolsa_compra{
+        padding: 20px;
+        text-align: left;
+    }
+    
+    .foto-producto{
+        order: 1;
+        display: flex;
+    }
+    
     .foto-producto img {
-        max-width: 100%;
-        height: auto;
+        width: 95%;
+        padding: 10px;
+    }
+    
+    .devoluciones{
+        text-align: center;
+        padding: 10px;
     }
 
     .detalle {
-        margin-top: 10px;
+        padding: 10px;
+        align-self: flex-start;
+        order: 2;
     }
-    .total p {
-        font-size: 100px; /* Ajustar el tamaño de fuente */
-        font-weight: bold; /* Hacer el texto más destacado */
-        margin-bottom: 10px; /* Espacio adicional entre los elementos */
-    }
-
+   
 }
 
  
