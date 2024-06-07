@@ -355,126 +355,90 @@ font-style: normal;
 
 
 /* Cart:*/
-.contenedor-padre {
-    text-align: center; 
-}
 
 .contenedor {
-display: flex;
-flex-direction: column;
-align-items: center;
-margin: 10px;
+    display: flex;
+    /*utilizar flexbox*/
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch; /* Estirar las cajas para que tengan la misma altura */
+    /*alinear verticalmete al centro*/
+    justify-content: space-around;
+    /*distribuir el espacio entre los elementos*/
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 650px;
 }
 
-.total, .medio-de-pago, .bolsa_compra {
-text-align: center;
-margin-bottom: 20px;
+.total{
+    order: 2;
+    justify-content: center;
 }
 
-.foto-producto {
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-bottom: 20px;
+.medio-de-pago {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
 }
 
-.foto-producto img {
-max-width: 100%;
-height: auto;
-}
-
-.detalle {
-margin-top: 10px;
-}
-.promo {
-font-size: 100px; /* Ajustar el tamaño de fuente */
-font-weight: bold; /* Hacer el texto más destacado */
-margin-bottom: 10px; /* Espacio adicional entre los elementos */
-}
-
-.total .medio-de-pago img {
+.medio-de-pago img {
     width: 30px; /* Tamaño pequeño para las imágenes */
     margin-right: 15px; /* Espacio entre las imágenes */
     padding: 5px;
 }
 
+.bolsa_compra{
+    padding: 5px;
+}
 
-@media only screen and (min-width: 1024px) {
-    
-    .bolsa-compra {
-        text-align: left;
-        display: block;
-        font-size: 1.17em;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        font-weight: bold;
-        unicode-bidi: isolate;
-    }
+.foto-producto{
+    order: 1;
+    display: flex;
+}
 
-    .contenedor {
+.foto-producto img {
+    width: 95%;
+    padding: 10px;
+}
+
+.devoluciones{
+    text-align: center;
+}
+
+@media only screen and (min-width: 1000px) {
+    .contenedor-padre, .contenedor {
         display: flex;
-        /*utilizar flexbox*/
-        flex-wrap: wrap; 
-        flex-direction: row;
-        align-items: stretch; /* Estirar las cajas para que tengan la misma altura */
-        /*alinear verticalmete al centro*/
-        justify-content: space-around;
-        /*distribuir el espacio entre los elementos*/
-        padding-left: 15px;
-        padding-right: 15px;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
     }
-    
-    .total{
-        order: 3;
-        padding-left: 20px;
-        align-items:center;
+
+    .total, .medio-de-pago, .bolsa_compra {
         text-align: center;
+        margin-bottom: 20px;
     }
-    
-    .total .medio-de-pago {
-        order: 4;
-        align-items: center; 
-        flex-direction:row ;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    
-    .total .medio-de-pago img {
-        width: 30px; /* Tamaño pequeño para las imágenes */
-        margin-right: 15px; /* Espacio entre las imágenes */
-        padding: 5px;
-    } 
-    
-    .bolsa_compra{
-        padding: 20px;
-        text-align: left;
-    }
-    
-    .foto-producto{
-        order: 1;
+
+    .foto-producto {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
     }
-    
+
     .foto-producto img {
-        width: 95%;
-        padding: 10px;
-    }
-    
-    .devoluciones{
-        text-align: center;
-        padding: 10px;
+        max-width: 100%;
+        height: auto;
     }
 
     .detalle {
-        padding: 10px;
-        align-self: flex-start;
-        order: 2;
+        margin-top: 10px;
     }
-   
-}
+    .total p {
+        font-size: 100px; /* Ajustar el tamaño de fuente */
+        font-weight: bold; /* Hacer el texto más destacado */
+        margin-bottom: 10px; /* Espacio adicional entre los elementos */
+    }
 
+}
  
 /* hasta aca es el cart */
 
@@ -500,54 +464,6 @@ margin-bottom: 10px; /* Espacio adicional entre los elementos */
     height: auto;
 }
 
-/* ARRANCA CATEGORY:*/
-
- .lista_productos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.lista_productos > div {
-    flex: 0 1 calc(20% - 20px);
-    margin-bottom: 20px;
-}
-
-.lista_productos img {
-    width: calc(100% - 10%);
-    height: 60%;
-    
-    object-fit: cover;
-    margin: 5%;
-    border: 2px solid black;
-    border-radius: 15px;
-}
-
-.lista_productos img:hover{
-    transform: scale(1,1.15);
-    box-shadow: 0px 20px 15px rgba(0,0,0,0.20);
-    margin: 10px;
- } 
-
-.descripcion {
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-@media only screen and (max-width: 1000px) {
-    .lista_productos {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .informacion_producto {
-        margin-top: 10%;
-    }
-}
 
 /* ARRANCA PRODUCTO:*/
 
