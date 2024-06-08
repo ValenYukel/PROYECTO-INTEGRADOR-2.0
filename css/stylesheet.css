@@ -171,7 +171,21 @@ main{
     display: flexbox;
  }
 
-.remera{
+.remera-hombre{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 40%;
+    padding: 60px;
+ }
+
+.remera-mujer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 40%;
+    padding: 60px;
+ }
+
+ .accesorios{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60% 40%;
