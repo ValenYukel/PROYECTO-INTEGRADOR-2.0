@@ -29,6 +29,10 @@ p:hover{
    font-weight: bold;
 }
 
+.descripcion-producto:hover{
+font-weight: normal;
+ }
+
 .titulo{
     font-family: "Lato", sans-serif;
     font-weight: 900;
@@ -201,15 +205,11 @@ main{
  }
 
 
-
-.info{
-    color: black;
-    font-size: medium;
-    display: grid;
-
-    flex-direction: column;
-    line-height: 1.5px;
+.descripcion-producto{
+  font-size: small;
  }
+
+
 
 
 .remera:hover{
