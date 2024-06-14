@@ -5,7 +5,10 @@ console.log(menuItems);
 menuItems.forEach(function(menuItem) {
     menuItem.addEventListener("click", function(e) {
 
-        let categoryText = menuItem.textContent  
+        let categoryText = menuItem.textContent 
+        
+        let titulo = document.querySelector(".ult_nov")
+        titulo.innerText = categoryText
 
         if (categoryText === "electronics" || categoryText === "jewelery") {
             e.preventDefault();  
