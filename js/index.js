@@ -71,3 +71,5 @@ fetch('https://fakestoreapi.com/products/category/women%27s%20clothing')
         console.log(e);
         console.log("Lo sentimos, este item no se muestra correctamente, refresque la página e intente nuevamente.");
     });
+
+//Arranca la seccion accesorios
