@@ -25,7 +25,7 @@ menuItems.forEach(function(menuItem) {
                     let caracteristicas = [];
 
                     for(let i = 0; i < resultados.length; i++) {
-                        caracteristicas += `<div class="remera-hombre">,
+                        caracteristicas += `<div class="remera-hombre">
                         <img class="producto-imagen" src = ${resultados[i].image} alt='${resultados[i].title}'/>
                         <p class="nombre-producto">${resultados[i].title}</p>
                         <p class="descripcion-producto">${resultados[i].description}</p>
