@@ -10,7 +10,7 @@ form.addEventListener("submit", function(e){
     } else if(password.value == "" ){
         alert("Por favor complete el campo password.");
        
-        if(password.value < 6 ){
+        if(password.value.length < 6 ){
             alert("La contraseña debe tener al menos 6 caracteres.");
         }
     } else{
