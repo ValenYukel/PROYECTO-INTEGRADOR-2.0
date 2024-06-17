@@ -7,6 +7,8 @@ fetch(url)
     .then(function(data){
         let resultados = data;
         console.log(resultados);
+
+        
     })
     .catch(function(error){
         console.log("Error: " + error)
