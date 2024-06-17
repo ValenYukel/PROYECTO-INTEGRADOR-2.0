@@ -10,13 +10,13 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito</title>
+    <title>Vaqueritos</title>
     <link href="css/stylesheet.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-wid th, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -35,14 +35,14 @@
         <div id="barra_nav">
             <nav id="menu">
                 <a href="index.html">home</a>
-                <a href="category.html">electronics</a>
-                <a href="category.html">jewelery</a>
-                <a href="category.html">men</a> 
-                <a href="category.html">women</a> 
+                <a href="category.html?category=electronics">electronics</a>
+                <a href="category.html?category=jewelery">jewelery</a>
+                <a href="category.html?category=men">men</a> 
+                <a href="category.html?category=women">women</a> 
                 <a href="cart.html">cart</a> 
                 <a href="login.html">sign in/login</a> 
             </nav>
-        </div>
+          </div>
         
         
         </div> 
@@ -61,26 +61,30 @@
                     
                     <div class="login-email">
                         <label for="email">Email:</label>
-                    <input id="email" type="email" name="email" value="">
+                    <input class="email_class" id="email" type="email" name="email" value="">
+                    <p class="email_info"></p>
                 </div>
             
                     <div class="login-password">
                         <label for="password">Contraseña:</label>
-                        <input id="password" type="password" name="password" value="">
+                        <input class="password_class" id="password" type="password" name="password" value="">
+                        <p class="password_info"></p>
                 </div>
 
                 <div class="login-password">
                     <label for="confirmar_password">Repetir contraseña:</label>
-                    <input id="confirmar_password" type="password" name="confirmar_password" value="">
+                    <input class="repetir_password_class" id="confirmar_password" type="password" name="confirmar_password" value="">
+                    <p class="password_info"></p>
             </div>
 
             <div class="terminos_condiciones">
-                <input id="terminos" type="checkbox" name="terminos" value="">
+                <input class="checkbox" id="terminos" type="checkbox" name="terminos" value="">
                 <label for='terminos'>Acepto los términos y condiciones</label>
             </div>
 
                 <div>
                         <button class="login-ingresar" type="submit">Registrarme</button> 
+    
                 </div>
                 </form>
             
@@ -90,7 +94,7 @@
               <div class="botones-acciones">
 
                 </div>
-                <p class="acciones_register"> ¿Ya tenes una cuenta? <a href="login.html"> Iniciar sesión </a></p>
+                <p class="acciones_register" id="ya_cuenta" ><a href="login.html"> ¿Ya tenes una cuenta? Iniciar sesión </a></p>
                 </div>
 
     </main>
@@ -155,6 +159,7 @@
         </div>
 
     </footer>
+    <script src="./js/register.js"></script>
 </body>
 
 </html>
