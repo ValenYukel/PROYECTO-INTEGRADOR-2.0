@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() { //Aseguro que se haya cargado todo antes de mostrarse
-    let queryString = window.location.search;
-    let urlParams = new URLSearchParams(queryString);
+    let queryString = location.search;
+    console.log(queryString)
+    let urlParams =  new URLSearchParams(queryString);
+    console.log(urlParams)
     let productoId = urlParams.get('id');
+    console.log(productoId)
     let url = `https://fakestoreapi.com/products/${productoId}` //Agarro el Id del producto y despues busco en el navegador el mismo link pero solo con ese Id
 
     fetch(url)
