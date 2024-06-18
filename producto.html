@@ -13,14 +13,9 @@
 
     <header>
         <div id="conteiner">
-        
             <div class="titulo">
-                
-            <h1>Vaqueritos</h1>
-        
-        
-        <a href="index.html"><img id="logo" src="imgs/cowboy2.jpeg" alt="logo"></a>
-        
+                <h1>Vaqueritos</h1>
+                <a href="index.html"><img id="logo" src="imgs/cowboy2.jpeg" alt="logo"></a>
         </div>
         
         <div id="barra_nav">
@@ -37,23 +32,21 @@
         
         
         </div> 
-        </header>
+    </header>
 
-
-
-<main>
-    <section class="contenedor_producto">
-     
-        <div class="secc">
-            <h3>DETALLES DEL PRODUCTO</h3>
-        </div>
+    <main>
+        <section class="contenedor_producto"> 
+            <div class="secc">
+                <h3>DETALLES DEL PRODUCTO</h3>
+            </div>
         <section class="contenedor">
             <div class="foto-producto">
-                <a href="category.html"><img src="imgs/remera_violeta.webp" alt="Remera Violeta"></a>
+                <img src='' alt='Imagen Producto' id='productImage'>
             </div>
             <div class="total">
-                <p class="titulo-producto"> REMERA VIOLETA </p>
-                <p class="detalle_producto"> Presentamos la "Remera Violeta", una remera totalmente original con un corte oversize confeccionada en classic jersey 30-1 color violeta. Esta remera tiene un proceso de lavado y gastado artesanal, convirtiendola en única, por lo que puede variar algún centímetro con respecto a la guía de talles y puede tener una manchas blancas que son propias del lavado.  </p>
+                <p class="titulo-producto"></p>
+                <a class="categoria-producto" href=''></a>
+                <p class="detalle-producto"></p>
                 <div>
                     <p class="opciones_talle">SELECCIONA EL TALLE</p>
                     <div class="talles">
@@ -63,10 +56,9 @@
                         <button class="talle">XL</button>
                     </div> 
                 </div>
-                <p class="precio"> $26 </p>
+                <p class="precio"></p>
                 <div id="botones">
-                    <a href="producto.html"><button id="boton">Ver más</button></a>
-                    <a href="cart.html"><button id="boton">Agregar al carrito</button></a>
+                    <button id='boton-agregar-carrito'>Agregar al carrito</button>
                 </div>
                 <p class="descuentos">Compra ahora y Paga en 3 cuotas sin interes. Para miembros de Vaqueritos</p>
                 <div class="medio-de-pago">
@@ -148,5 +140,6 @@
    
 </footer>
 
+<script src="./js/producto.js"></script>
 </body>
 </html>
