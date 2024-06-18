@@ -6,8 +6,11 @@ let email_info = document.querySelector(".email_info");
 let password_info = document.querySelector(".password_info");
 let terminos = document.querySelector("#terminos");
 
+
+
 form.addEventListener("submit", function(e){
     e.preventDefault();
+  
 
     if(email.value === ""){
         email_info.innerHTML = "Por favor escriba su email.";
