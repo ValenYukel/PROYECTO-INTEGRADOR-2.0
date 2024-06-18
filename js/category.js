@@ -29,7 +29,7 @@ let titulo = document.querySelector(".ult_nov")
 
                     for(let i = 0; i < resultados.length; i++) {
                         caracteristicas += 
-                        `<div class="remera-hombre">
+                        `<div class="producto_category">
                             <div class="remera-img">
                                 <a href="producto.html"><img class="producto-imagen" src=${resultados[i].image} alt=${resultados[i].title}></a>
                                 <div class="info">
