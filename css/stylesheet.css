@@ -199,14 +199,13 @@ main{
     padding: 60px;
  }
 
+
  .accesorios{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60% 40%;
     padding: 60px;
  }
-
-
 
 
 .descripcion-producto{
@@ -219,7 +218,6 @@ overflow: hidden;
 .producto_category:hover, .remera-hombre:hover, .remera-mujer:hover, .accesorios:hover{
     transform: scale(1,1.07);
     box-shadow: 19px 10px 7px rgba(0,0,0,0.20);
-    margin: 10px;
     transition: all 0.5s;
  }
 
@@ -271,7 +269,7 @@ font-style: normal;
         border: 2px solid black; 
       }
 
-      #logo{
+    #logo{
         width: 70px;
         height: 70px;
         border-radius: 50%;
@@ -312,14 +310,14 @@ font-style: normal;
         width: 100%;
     }
 
-    .producto_category, .remera-hombre, .remera-mujer, .accesorios {
+    .producto_category, 
+    .remera-hombre, 
+    .remera-mujer, .accesorios {
         flex: 1 1 320px; 
         box-sizing: border-box;
         overflow: hidden;
     }
 
-   
-    
     
 }
 
