@@ -22,13 +22,15 @@ fetch('https://fakestoreapi.com/products/category/men%27s%20clothing')
                 let descripcion = hombres[i].querySelector(".descripcion-producto");
                 let precio = hombres[i].querySelector(".precio-producto");
                 let imagen = hombres[i].querySelector(".producto-imagen");
-                let enlace = hombres[i].querySelector('.ver-mas');
+                let enlaceImg = hombres[i].querySelector('.ver-mas-imagen');
+                let enlaceBoton = hombres[i].querySelector('.ver-mas');
                 
                 nombre.innerText = nombreProd;
                 descripcion.innerText = descripcionProd;
                 precio.innerText = `$${precioProd}`;
                 imagen.src = imagenProd;
-                enlace.href = `producto.html?id=${idProd}`
+                enlaceImg.href = `producto.html?id=${idProd}`
+                enlaceBoton.href = `producto.html?id=${idProd}`
             }
         }
 
@@ -62,13 +64,15 @@ fetch('https://fakestoreapi.com/products/category/women%27s%20clothing')
                 let descripcion = mujeres[i].querySelector(".descripcion-producto");
                 let precio = mujeres[i].querySelector(".precio-producto");
                 let imagen = mujeres[i].querySelector(".producto-imagen");
-                let enlace = mujeres[i].querySelector('.ver-mas');
+                let enlaceImg = mujeres[i].querySelector('.ver-mas-imagen');
+                let enlaceBoton = mujeres[i].querySelector('.ver-mas');
 
                 nombre.innerText = nombreProd;
                 descripcion.innerText = descripcionProd;
                 precio.innerText = `$${precioProd}`;
                 imagen.src = imagenProd;
-                enlace.href = `producto.html?id=${idProd}`
+                enlaceImg.href = `producto.html?id=${idProd}`
+                enlaceBoton.href = `producto.html?id=${idProd}`
             }
         }
 
@@ -102,13 +106,15 @@ fetch('https://fakestoreapi.com/products/category/jewelery')
                 let descripcion = accesorios[i].querySelector(".descripcion-producto");
                 let precio = accesorios[i].querySelector(".precio-producto");
                 let imagen = accesorios[i].querySelector(".producto-imagen");
-                let enlace = accesorios[i].querySelector('.ver-mas');
+                let enlaceImg = accesorios[i].querySelector('.ver-mas-imagen');
+                let enlaceBoton = accesorios[i].querySelector('.ver-mas');
 
                 nombre.innerText = nombreProd;
                 descripcion.innerText = descripcionProd;
                 precio.innerText = `$${precioProd}`;
                 imagen.src = imagenProd;
-                enlace.href = `producto.html?id=${idProd}`
+                enlaceImg.href = `producto.html?id=${idProd}`
+                enlaceBoton.href = `producto.html?id=${idProd}`
             }
         }
     })
