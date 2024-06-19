@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function() { //Aseguro que se haya
                 carrito.push(productoId); //Agrego ID del producto al carrito
                 localStorage.setItem('cart', JSON.stringify(carrito));
                 alert('Producto agregado al carrito');
+                console.log(carrito)
 
             })
         })

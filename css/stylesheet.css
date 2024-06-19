@@ -520,9 +520,10 @@ font-style: normal;
     border: 20px black;
     cursor: pointer;
     margin-bottom: 20px;
-    width: 80px;
+    width: 800px;
     height: 40px;
     margin: 10px;
+    align-items: center;
 }
 
 .talle:focus {
