@@ -1,3 +1,13 @@
+//Saludo desde login
+let email = localStorage.email
+console.log(email)
+document.querySelector('.saludo').innerHTML += email
+
+if (localStorage.getItem('email') !== 'undefined' && localStorage.getItem('email') !== null) {
+    let loginLink = document.querySelector('.login-link');
+    loginLink.style.display = 'none';
+}
+
 //Arranca la seccion de hombres
 let hombres = document.querySelectorAll(".remera-hombre");
 

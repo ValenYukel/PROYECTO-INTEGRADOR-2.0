@@ -31,7 +31,7 @@ let titulo = document.querySelector(".ult_nov")
                         caracteristicas += 
                         `<div class="producto_category">
                             <div class="remera-img">
-                                <a href="producto.html"><img class="producto-imagen" src=${resultados[i].image} alt=${resultados[i].title}></a>
+                                <a href=producto.html?id=${resultados[i].id}><img class="producto-imagen" src=${resultados[i].image} alt=${resultados[i].title}></a>
                                 <div class="info">
                                     <p class="nombre-producto">${resultados[i].title}</p>
                                     <p class="descripcion-producto">${resultados[i].description}</p>
@@ -70,7 +70,7 @@ let titulo = document.querySelector(".ult_nov")
                 caracteristicas += 
                 `<div class="remera-hombre">
                     <div class="remera-img">
-                        <a href="producto.html"><img class="producto-imagen" src=${resultados[i].image} alt=${resultados[i].title}></a>
+                        <a href=producto.html?id=${resultados[i].id}><img class="producto-imagen" src=${resultados[i].image} alt=${resultados[i].title}></a>
                         <div class="info">
                               <p class="nombre-producto">${resultados[i].title}</p>
                               <p class="descripcion-producto">${resultados[i].description}</p>
