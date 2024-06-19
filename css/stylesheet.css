@@ -410,6 +410,10 @@ font-style: normal;
     padding-right: 15px;
 }
 
+.bolsaCompra {
+    text-align: center;
+}
+
 .total{
     order: 2;
     justify-content: center;
