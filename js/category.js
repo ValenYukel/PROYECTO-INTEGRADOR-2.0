@@ -1,3 +1,11 @@
+let email = localStorage.email
+console.log(email)
+
+if (localStorage.getItem('email') !== 'undefined' && localStorage.getItem('email') !== null) {
+    let loginLink = document.querySelector('.login-link');
+    loginLink.style.display = 'none';
+}
+
 let queryString = location.search;
 let urlParams = new URLSearchParams(queryString);
 let categoria = urlParams.get('category');
