@@ -1,3 +1,11 @@
+let email = localStorage.email
+console.log(email)
+
+if (localStorage.getItem('email') !== 'undefined' && localStorage.getItem('email') !== null) {
+    let loginLink = document.querySelector('.login-link');
+    loginLink.style.display = 'none';
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     // convierto los productos del cart y los paso a una array. Si no hya nada en el cart va  aestar vacio
     let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
