@@ -1,44 +1,36 @@
-let url = 'https://fakestoreapi.com/products'
+document.addEventListener("DOMContentLoaded", function () {
+    let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+    let contenedor = document.querySelector('.contenedor');
 
-fetch(url)
-    .then(function(res){
-        return res.json()
-    })
-    .then(function(data){
-        let resultados = data;
-        console.log(resultados);
+    if (cartItems.length === 0) {
+        document.querySelector('.detalle').innerHTML = "Su carrito está vacío";
+    } else {
+        contenedor.innerHTML = ''; // Limpiar el contenedor antes de agregar nuevos elementos
 
-        let recuperarStorage = lacalStorage.getItem('');
-        let productosRecuperados = json.parse();
-
-        if (!productosRecuperados.length === 0) {
-            let detalle = document.querySelector('.detlle');
-            detalle.innerHTML = "Su carrito esta vacio"
-        }
-        else {
-            // Si hay productos en el carrito, recuperar los IDs y consultar la API
-            let lista = document.querySelector('.contenedor');
-
-            productosRecuperados.forEach(id => {
-                let producto = resultados.find(item => item.id === id);
-
-                if (producto) {
-                    let productoDiv = document.createElement('div');
-                    productoDiv.className = 'producto';
-                    productoDiv.innerHTML = `
+        for (let i = 0; i < cartItems.length; i++) {
+            let id = cartItems[i];
+            fetch(`https://fakestoreapi.com/products/${id}`)
+                .then(function (res) {
+                    return res.json();
+                })
+                .then(function(product) {
+                    console.log(product)
+                    let productDiv = document.createElement('div');
+                    productDiv.className = 'producto';
+                    productDiv.innerHTML = `
                         <div class="foto-producto">
-                            <img src="${producto.image}" alt="${producto.title}">
+                            <img src="${product.image}" alt="${product.title}">
                         </div>
                         <div class="detalle">
-                            <p>Nombre: ${producto.title}</p>
-                            <p>Descripción: ${producto.description}</p>
-                            <p>Precio: $${producto.price}</p>
+                            <p>Nombre: ${product.title}</p>
+                            <p>Precio: $${product.price}</p>
                         </div>
                     `;
-                }
-            });
+                    contenedor.appendChild(productDiv);
+                })
+                .catch(function (e) {
+                    console.error('Error al seleccionar el producto:', e)
+                })
         }
-    })
-    .catch(function(error){
-        console.log("Error: " + error)
-    })
+    }
+});
