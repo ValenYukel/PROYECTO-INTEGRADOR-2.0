@@ -6,6 +6,11 @@ document.querySelector('.saludo').innerHTML += email
 if (localStorage.getItem('email') !== 'undefined' && localStorage.getItem('email') !== null) {
     let loginLink = document.querySelector('.login-link');
     loginLink.style.display = 'none';
+} else {
+    let saludo = document.querySelector('.saludo');
+    let linkLogout = document.querySelector('.link-logout');
+    saludo.style.display = 'none';
+    linkLogout.style.display = 'none';
 }
 
 //Arranca la seccion de hombres

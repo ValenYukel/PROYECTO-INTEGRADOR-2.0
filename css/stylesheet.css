@@ -255,6 +255,15 @@ font-style: normal;
     border: 2px solid black;
 }
 
+.saludo {
+    text-align: center;
+}
+
+.link-logout {
+    text-align: center;
+    text-decoration: underline;
+}
+
 @media (min-width: 1024px) {
     
     header{
