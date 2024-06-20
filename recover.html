@@ -48,9 +48,16 @@
 
                 <form action="results.html" method="GET">
 
+                    <div class="recuperar">
+                        <input class="checkbox" id="terminos" type="checkbox" name="terminos" value="">
+                        <label for='terminos'>Recuperar</label>
+                        <p clas="recuperar_txt"> </p>
+                    </div>
+
                     <div class="login-email">
                         <label for="email">Email:</label>
                         <input id="email" type="email" name="mail" value="">
+                        <p class="email_info"> </p>
                     </div>
 
                     <div class="login-password">
@@ -58,7 +65,7 @@
                         <input id="password" type="password" name="pass" value="">
                     </div>
                     <div>
-                        <button class="login-ingresar" type="submit">Enviar</button> 
+                        <button class="login-ingresar" type="submit">Quiero recuperar mi contraseña</button> 
                 </div>
             <script src="./js/recover.js"></script>
     </main>
