@@ -56,5 +56,5 @@ document.addEventListener("DOMContentLoaded", function () {
 function finalizarCompra() {
     localStorage.removeItem('cart');
     alert('Gracias por su compra');
-    window.location.href = 'index.html';
+    location.href = 'index.html';
 }
