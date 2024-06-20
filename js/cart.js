@@ -3,7 +3,6 @@ console.log(email)
 
 if (localStorage.getItem('email') !== 'undefined' && localStorage.getItem('email') !== null) {
     let loginLink = document.querySelector('.login-link');
-    loginLink.style.display = 'none';
 }
 
 document.addEventListener("DOMContentLoaded", function () {
