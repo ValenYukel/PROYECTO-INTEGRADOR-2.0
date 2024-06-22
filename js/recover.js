@@ -9,7 +9,7 @@ form.addEventListener("submit", function(e) {
     e.preventDefault();
     let valido = true; // cree una variable que se siempre True para comprarla en los if
 
-    if (recuperar.value == "") {  
+    if (recuperar.checked == "") {  
        recuperar_txt.innerHTML = "Por favor acepte el campo Quiero recuperar mi contraseña";
        valido = false;  
     } else {
