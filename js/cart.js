@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
     let contenedor = document.querySelector('.contenedor');
 
-    // verifica si el cart esta vacio
+    // verifico si el cart esta vacio
     if (cartItems.length === 0) {
         document.querySelector('.detalle').innerHTML = "Su carrito está vacío";
     } else {
